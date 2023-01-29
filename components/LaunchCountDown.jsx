@@ -34,13 +34,17 @@ const LaunchCountdown = ({ date }) => {
   }, []);
 
   return (
-
-    <div className='flex flex-row gap-4'>
-      <Countdown prev={0} count={days} label={'días'} />
-      <Countdown prev={0} count={hours} label={'hours'} />
-      <Countdown prev={0} count={minutes} label={'minutes'} />
-      <Countdown prev={0} count={seconds} label={'seconds'} />
-    </div>
+    <section>
+      <header>
+        <p className='text-3xl my-2 font-bold'>Solo quedan...</p>
+      </header>
+      <main className='flex flex-row gap-4 justify-center'>
+        <Countdown prev={0} count={days} label={'días'} />
+        <Countdown prev={0} count={hours} label={'horas'} />
+        <Countdown prev={0} count={minutes} label={'minutos'} />
+        <Countdown prev={0} count={seconds} label={'segundos'} />
+      </main>
+    </section>
   );
 };
 

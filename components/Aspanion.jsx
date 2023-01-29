@@ -1,8 +1,22 @@
+import Image from "next/image";
+
 export default function Aspanion() {
+  const aspanion = <a href='https://aspanion.es/' target={'_blank'} rel="noreferrer" className='text-blue-400'>Aspanion</a>
   return (
-    <div className="Aspanion">
-        <h1>Aspanion</h1>
-        <p> Aspanion is a web application that allows users to create and share their own playlists. Users can also search for songs and add them to their playlists. </p>
-        </div>
+    <section>
+      <h2 className='font-bold text-3xl text-center py-2'>Colaboramos con Aspanion</h2>
+      <p>Parte del dinero recaudado con la venta de las entradas va destinado a la asociación { aspanion }
+        . Esta asociación se dedica a la investigación y tratamiento del cáncer en niños.
+      </p>
+      <div className='w-full flex justify-center'>
+        <Image
+          src="/aspanion.png"
+          alt="Logo de Aspanion"
+          width={150}
+          height={150}
+          className="mx-auto"
+        />
+      </div>
+    </section>
   )
 }
