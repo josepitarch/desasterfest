@@ -10,7 +10,7 @@ export default function Aspanion() {
       </p>
       <div className='w-full flex justify-center'>
         <Image
-          src="/aspanion.png"
+          src="/aspanion.jpg"
           alt="Logo de Aspanion"
           width={150}
           height={150}

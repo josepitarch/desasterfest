@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Aspanion from '../components/Aspanion'
 import LaunchCountdown from '../components/LaunchCountDown'
+import Gallery from '../components/Gallery'
 
 export default function Home() {
   return (
@@ -33,6 +34,8 @@ export default function Home() {
           </p>
         </section>
       </main>
+
+      <Gallery />
     </>
   )
 }
