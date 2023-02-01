@@ -2,8 +2,12 @@ import Head from 'next/head'
 import Aspanion from '../components/Aspanion'
 import LaunchCountdown from '../components/LaunchCountDown'
 import Gallery from '../components/Gallery'
+import handler from '../pages/api/desaster/2022'
+import fs from 'node:fs/promises'
+import path from 'node:path'
 
-export default function Home() {
+
+export default function Home({ images }) {
   return (
     <>
       <Head>
@@ -29,13 +33,24 @@ export default function Home() {
         <Aspanion />
         <section>
           <h2 className='text-3xl text-center font-bold'>Desaster Fest 2022</h2>
-          <p>Por si alguien estuvo en Narnia el año pasado y se perdió lo que fue la primera edición de este
+          <p className='py-2'>Por si alguien estuvo en Narnia el año pasado y se perdió lo que fue la primera edición de este
             gran evento, aquí les dejamos un resumen de lo que fue esta experiencia.
           </p>
+          <Gallery images={images} />
         </section>
       </main>
 
-      <Gallery />
+      
     </>
   )
+}
+
+export async function getStaticProps(context) {
+  const jsonDirectory = path.join(process.cwd(), '/public/disaster2022')
+  const images = await fs.readdir(jsonDirectory, 'utf8')
+  return {
+    props: {
+      images
+    }
+  }
 }
