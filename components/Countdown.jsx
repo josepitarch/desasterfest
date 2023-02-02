@@ -1,44 +1,37 @@
-import { useMemo } from "react";
-import styles from '../styles/Countdown.module.css';
-import cn from 'classnames';
+import { useRemainingTime } from '../hooks/useRemainingTime.js'
 
-const Countdown = ({ prev, count, label }) => {
+const targetDate = new Date(1694268000000)
 
-  const padPrev = useMemo(() => {
-    return String(prev).padStart(2, '0');
-  }, [prev]);
 
-  const padCount = useMemo(() => {
-    return String(count).padStart(2, '0');
-  }, [count]);
+export default function Countdown () {
+	const { days, hours, minutes, seconds, countdownEnded } = useRemainingTime(targetDate)
+	const time = [
+		{ label: 'Días', value: days },
+		{ label: 'Horas', value: hours },
+		{ label: 'Minutos', value: minutes },
+		{ label: 'Segundos', value: seconds }
+	]
 
-  return (
-    <div className={styles.countdown}>
-      <div className={styles.countdownBlockBackface}>
-        <div className={styles.countdownBlock}>
-          <div className={cn(styles.top, styles.flip)}>
-            {padPrev}
-          </div>
-          <div className={styles.top}>
-            {padCount}
-          </div>
-          <div className={styles.bottom}>
-            {padPrev}
-          </div>
-          <div className={cn(styles.bottom, styles.flip)}>
-            {padCount}
-          </div>
-          <div className={styles.countdownBlockOverlay}>
-          </div>
-          <div className={styles.countdownBlockSide}>
-          </div>
-        </div>
-      </div>
-      <p className={styles.label}>
-        {label}
-      </p>
-    </div>
-  );
-};
+	return (
+		<>
+			{countdownEnded && (
+				<div className='mb-2 font-bold'>
+					Empieza la Desaster Fest 2023 🎊
+				</div>)
+			}
 
-export default Countdown;
+			<section className='flex -rotate-[10deg]'>
+				<p>Solo quedan</p>
+				{time.map(({ label, value }, index) => {
+					const isLast = index === time.length - 1
+					return (
+						<div key={label} className='flex-col w-16 lg:w-28 text-center italic '>
+							<div className={`text-3xl lg:text-5xl text-white font-bold relative ${!isLast && 'after:ml-2 lg:after:ml-5 after:font-bold after:text-white after:content-[":"] after:absolute'}`}>{value}</div>
+							{label && <span className='text-white/80 text-xs lg:text-base'>{label}</span>}
+						</div>
+					)
+				})}
+			</section>
+		</>
+	)
+}

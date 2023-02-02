@@ -12,6 +12,7 @@ export default function Gallery({ images }) {
               alt={`Imagen ${index}`}
               width={300}
               height={300}
+              
             />
           )
         })
