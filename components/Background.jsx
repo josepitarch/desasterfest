@@ -1,4 +1,4 @@
-import HyperDrive from './HyperDrive.js'
+import HyperDrive from './HyperDrive.jsx'
 import Starfield from './Starfield.jsx'
 
 export default function Background() {

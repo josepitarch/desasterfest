@@ -7,6 +7,7 @@ const canvas = document.querySelector('#hyperdrive')
 
 	const activeClasses = ['duration-1000']
 	const inactiveClasses = ['opacity-0', 'duration-[3s]']
+	
 	const setWarpspeed = (active) => {
 		effect.warpspeed = active
 		if (active) {

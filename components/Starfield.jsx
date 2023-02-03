@@ -6,8 +6,7 @@ export default function Starfield({ subtle }) {
 			style={{
 				backgroundImage: 'url(/stars.png)',
 				backgroundRepeat: 'repeat',
-				maskImage: 'url(/stars-mask.webp)',
-				maskRepeat: 'repeat'
+				maskRepeat: 'repeat',
 			}}
 			className={classes}
 			>
