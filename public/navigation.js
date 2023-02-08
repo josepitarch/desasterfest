@@ -29,7 +29,7 @@ const getTargetSection = (entry) => {
 }
 
 const updateLink = (target) => {
-	console.log('updateLink', target)
+	
 }
 
 const onIntersect = (entries) => {

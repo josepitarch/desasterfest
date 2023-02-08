@@ -7,6 +7,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import Background from '../components/Background'
 import Script from 'next/script'
+import Navigation from '../components/Navigation'
 
 export default function Home({ images }) {
   const DynamicComponent = dynamic(() =>
@@ -24,39 +25,46 @@ export default function Home({ images }) {
       </Head>
       <Background />
 
-      <header id='top' className='min-h-screen'>
-        <h1 className='text-primary text-xl xl:text-[54px] leading-none text-center font-black uppercase italic -rotate-[10deg]'>
-          <span className='text-6xl lg:text-8xl xl:text-9xl block'>Evento</span>
-          <span className='max-w-[38rem] m-auto'>
-            de música electrónica
-          </span>
-          <span className='max-w-[38rem] m-auto block'>
-            II Edición
-          </span>
-        </h1>
-
-        <div className='text-center mt-10 flex justify-center flex-col'>
-          <h2 className='animate-fadeIn animate-delay-200 italic font-extrabold text-5xl lg:text-6xl text-white -rotate-[10deg]'>9 de septiembre</h2>
-          <h3 className='animate-fadeIn animate-delay-200 italic text-white/80 text-lg -rotate-[10deg]'>A partir de las 16:00 horas
-          <span className='px-2'>·</span> Recinto ferial Almenara
-          </h3>
-
-          <div className='m-auto mt-8 animate-fadeIn animate-delay-500'>
-            <DynamicComponent />
-          </div>
+      <div className='pt-4 xl:pt-24 flex flex-col xl:flex-row justify-between m-auto xl:gap-x-24 xl:w-[1200px]'>
+        <div className='w-full xl:w-52'>
+          <Navigation />
         </div>
-      </header>
+        <main>
+          <header id='top' className='min-h-screen'>
+            <h1 className='text-primary text-xl xl:text-[54px] leading-none text-center font-black uppercase italic -rotate-[10deg]'>
+              <span className='text-6xl lg:text-8xl xl:text-9xl block'>Evento</span>
+              <span className='max-w-[38rem] m-auto'>
+                de música electrónica
+              </span>
+              <span className='max-w-[38rem] m-auto block'>
+                II Edición
+              </span>
+            </h1>
 
-      <main className='p-4'>
-        <Aspanion />
-        <section>
-          <h2 className='text-3xl text-center font-bold'>Desaster Fest 2022</h2>
-          <p className='py-2'>Por si alguien estuvo en Narnia el año pasado y se perdió lo que fue la primera edición de este
-            gran evento, aquí les dejamos un resumen de lo que fue esta experiencia.
-          </p>
-          <Gallery images={images} />
-        </section>
-      </main>
+            <div className='text-center mt-10 flex justify-center flex-col'>
+              <h2 className='animate-fadeIn animate-delay-200 italic font-extrabold text-5xl lg:text-6xl text-white -rotate-[10deg]'>9 de septiembre</h2>
+              <h3 className='animate-fadeIn animate-delay-200 italic text-white/80 text-lg -rotate-[10deg] mt-3'>A partir de las 16:00 horas
+                <span className='xl:px-1'> · </span>Recinto ferial Almenara
+              </h3>
+
+              <div className='m-auto mt-8 animate-fadeIn animate-delay-500'>
+                <DynamicComponent />
+              </div>
+            </div>
+          </header>
+
+          <main className='p-4'>
+            <Aspanion />
+            <section>
+              <h2 className='text-3xl text-center font-bold'>Desaster Fest 2022</h2>
+              <p className='py-2'>Por si alguien estuvo en Narnia el año pasado y se perdió lo que fue la primera edición de este
+                gran evento, aquí les dejamos un resumen de lo que fue esta experiencia.
+              </p>
+              <Gallery images={images} />
+            </section>
+          </main>
+        </main>
+      </div>
 
 
     </>
