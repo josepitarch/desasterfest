@@ -21,7 +21,6 @@ export default function Countdown () {
 			}
 
 			<section className='flex -rotate-[10deg]'>
-				<p>Solo quedan</p>
 				{time.map(({ label, value }, index) => {
 					const isLast = index === time.length - 1
 					return (

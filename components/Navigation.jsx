@@ -33,7 +33,7 @@ export default function Navigation() {
 			</label>
 
 			<nav id='navbar' className='last absolute top-0 left-0 right-0 z-40 hidden min-h-screen py-24 px-8 bg-black/30 peer-checked:block backdrop-blur-lg text-center xl:px-0 xl:flex xl:flex-col xl:min-h-min xl:backdrop-blur-0 xl:mt-24 transition-all'>
-				<ul className='flex flex-col gap-y-8 mb-20 text-primary'>
+				<ul className='flex flex-col gap-y-8 mb-20 text-primary text-4xl'>
 					{
 						NAVIGATION_LINKS.map(({ title, href }) => {
 							return <li key={title}>

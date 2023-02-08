@@ -9,9 +9,10 @@
 label {
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: 0.65rem;
   width: 3rem;
-  height: 3rem;
+  max-height: 3rem;
+  overflow: hidden;
 }
 
 label > div {
