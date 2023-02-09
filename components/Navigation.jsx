@@ -20,7 +20,7 @@ export default function Navigation() {
 	return (
 		<aside className='flex flex-col-reverse content-center xl:sticky xl:top-24 xl:flex-col'>
 			<Link href='/#top' className='mt-[-50px] xl:mt-0'>
-				<Image src={Logo} id='logo' class='animate-zoomIn' alt='Logo Desaster Fest'/>
+				<Image src={Logo} id='logo' className='animate-zoomIn' alt='Logo Desaster Fest'/>
 			</Link>
 			<input type='checkbox' hidden id='menu' className='peer' />
 			<label

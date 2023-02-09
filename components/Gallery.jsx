@@ -1,22 +1,23 @@
-import Image from 'next/image';
+import Image from 'next/image'
+import { Carousel } from '@mantine/carousel'
+
 
 export default function Gallery({ images }) {
   return (
-    <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 md:px-4'>
+
+    <Carousel sx={{ maxWidth: 900}} className='carousel'  withIndicators style={{width: '100%'}}>
       {
         images.map((image, index) => {
-          return (
+          return <Carousel.Slide key={index} className='prueba'>
             <Image
               key={index}
               src={`/disaster2022/${image}`}
               alt={`Imagen ${index}`}
-              width={300}
-              height={300}
-              
+              fill
             />
-          )
+          </Carousel.Slide>
         })
       }
-    </div>
-  );
+    </Carousel>
+  )
 }
