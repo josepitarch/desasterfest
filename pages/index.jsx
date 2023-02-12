@@ -8,6 +8,8 @@ import path from 'node:path'
 import Background from '../components/Background'
 import Script from 'next/script'
 import Navigation from '../components/Navigation'
+import LineUp from '../components/LineUp'
+import Link from 'next/link'
 
 export default function Home({ images }) {
   const DynamicComponent = dynamic(() =>
@@ -46,14 +48,19 @@ export default function Home({ images }) {
             <div className='mt-8 animate-fadeIn animate-delay-500'>
               <DynamicComponent />
             </div>
-            <button className='text-3xl font-medium text-primary w-80 lg:w-96 mt-20 p-4 bg-gradient-to-r from-violet-400 to-violet-800 rounded-md'>Comprar entradas</button>
+            
+              <Link href='/buy_ticket' className='text-3xl font-medium text-center text-primary w-80 lg:w-96 mt-20 p-4 bg-gradient-to-r from-violet-400 to-violet-800 rounded-md'>
+                Comprar entradas
+              </Link>
           </header>
+
+          <LineUp />
 
           <Aspanion />
 
           <section className='p-4 mb-20'>
-            <h2 className='font-bold'>Desaster Fest 2022</h2>
-            <p className='py-2'>Os dejamos algunas imágenes de lo que fue la primera edición de este gran evento.
+            <h2>Desaster Fest 2022</h2>
+            <p>Os dejamos algunas imágenes de lo que fue la primera edición de este gran evento.
               No hace falta decir que estamos muy duro para conseguir que en esta edición tener junto a nosotros
               a los mejores artistas del panorama nacional e internacional.
             </p>
