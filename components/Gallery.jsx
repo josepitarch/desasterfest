@@ -5,10 +5,10 @@ import { Carousel } from '@mantine/carousel'
 export default function Gallery({ images }) {
   return (
 
-    <Carousel sx={{ maxWidth: 900}} className='carousel'  withIndicators style={{width: '100%'}}>
+    <Carousel className='carousel'  withIndicators style={{width: '100%'}}>
       {
         images.map((image, index) => {
-          return <Carousel.Slide key={index} className='prueba'>
+          return <Carousel.Slide key={index}>
             <Image
               key={index}
               src={`/disaster2022/${image}`}

@@ -46,7 +46,7 @@ const fakeArtists = Array(4)
 
 export default function LineUp() {
 	return (
-		<section className='p-4'>
+		<section id='line-up' className='p-4'>
 			<h2>Line Up</h2>
 			<ul id='container-line-up'>
 				{
