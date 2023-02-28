@@ -19,16 +19,19 @@ export default function Home({ images }) {
 
   return (
     <>
-      <Script src="/background.js" />
-      <Script src="/navigation.js" />
       <Head>
         <title>Desaster Fest</title>
         <meta name="description" content="Página oficial de Desaster Fest" />
         <link rel="icon" href="/logo.png" />
-      </Head>
-      <Background />
+        <Background />
 
-      <div className='pt-4 xl:pt-24 flex flex-col xl:flex-row m-auto xl:gap-x-24 xl:w-[1400px]'>
+      </Head>
+
+      <Script src="/background.js" />
+      <Script src="/navigation.js" />
+
+
+      <div className='pt-4 xl:pt-24 flex flex-col xl:flex-row m-auto xl:gap-x-24 xl:w-[1300px]'>
         <div className='w-full xl:w-52'>
           <Navigation />
         </div>
@@ -61,13 +64,25 @@ export default function Home({ images }) {
 
           <Aspanion />
 
-          <section className='p-4 mb-20'>
+          <section id='first-edition' className='p-4 mb-20'>
             <h2>Desaster Fest 2022</h2>
             <p className='mb-8'>Os dejamos algunas imágenes de lo que fue la primera edición de este gran evento.
-              No hace falta decir que estamos muy duro para conseguir que en esta edición tener junto a nosotros
-              a los mejores artistas del panorama nacional e internacional.
+              No hace falta decir que estamos trabajando muy duro para conseguir en esta segunda edición contar con
+              los mejores artistas que hagan que este evento sea inolvidable.
             </p>
             <Gallery images={images} />
+          </section>
+          <section id='localization' className='max-w-full p-4 mb-20'>
+            <h2 className='mb-6'>Cómo llegar</h2>
+            <div className='flex flex-col md:flex-row h-96'>
+              <h3 className='md:pr-4 text-white self-center'>
+                El evento se celebra en el recinto ferial de la localidad
+                de Almenara, en la provincia de Castellón.
+              </h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d911.9346204543267!2d-0.22883838207516277!3d39.753795557218716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60139429729bed%3A0x8b96a21383dcdaa6!2sDesasterfest!5e0!3m2!1ses!2ses!4v1677185641352!5m2!1ses!2ses"
+                style={{ "border": "0", "width": "100%", "height": '100%' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </section>
         </main>
       </div>
