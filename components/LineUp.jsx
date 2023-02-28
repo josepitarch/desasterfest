@@ -3,41 +3,29 @@ import { Card, Text, Image } from '@mantine/core';
 const artists = [
 	{
 		id: 1,
-		name: 'Jose Conca',
+		name: 'Monica X',
 		description: 'DJ de la discoteca de la ruta Chocolate',
-		image: 'lineup/jose-conca.jpg'
+		image: 'line-up/monica.jpg'
 	},
 	{
 		id: 2,
-		name: 'Serrano',
+		name: 'Batiste',
 		description: 'DJ del pueblo',
-		image: 'lineup/serrano.jpg'
+		image: 'line-up/batiste.jpg'
 	},
 	{
 		id: 3,
-		name: 'Abel K Kaña',
+		name: 'Paco Caña',
 		description: 'DJ de la discoteca Masia',
-		image: 'lineup/abel-k-kaña.jpg'
+		image: 'line-up/pacocana.jpg'
 	},
-	{
-		id: 4,
-		name: 'Rau Platero',
-		description: 'DJ de remember',
-		image: 'lineup/rau-platero.jpg'
-	},
-	{
-		id: 5,
-		name: 'Miguel Serna',
-		description: 'DJ de remember',
-		image: 'lineup/miguel-serna.jpg'
-	}
 ]
 
 const fakeArtist = {
 	id: 6,
 	name: 'DJ',
 	description: 'DJ de la discoteca de la ruta Chocolate',
-	image: 'lineup/jose-conca.jpg'
+	image: 'line-up/jose-conca.jpg'
 }
 
 const fakeArtists = Array(4)
@@ -51,31 +39,15 @@ export default function LineUp() {
 			<ul id='container-line-up'>
 				{
 					artists.map(artist => (
-						<Card key={artist.id} component='li' style={{ padding: '10px' }} p="lg" radius="md">
+						<Card key={artist.id} component='li' p="lg" radius="md">
 							<Card.Section component='div'>
 								<Image
-									src="/line-up/sample_line_up.jpg"
-									height={160}
+									src={artist.image}
+									height={300}
 									alt="Norway"
 								/>
 							</Card.Section>
-							<Text weight={500} component='h4'>{artist.name}</Text>
-							<Text size="sm" color="dimmed" component='h5'>{artist.description}</Text>
-						</Card>
-					))
-				}
-				{
-					fakeArtists.map(artist => (
-						<Card key={artist.id} component='li' style={{ padding: '10px' }} p="lg" radius="md" className='blur-md'>
-							<Card.Section component='div'>
-								<Image
-									src="/line-up/sample_line_up.jpg"
-									height={160}
-									alt="Norway"
-								/>
-							</Card.Section>
-							<Text weight={500} component='h4'>{artist.name}</Text>
-							<Text size="sm" color="dimmed" component='h5'>{artist.description}</Text>
+							<Text weight={500} style={{ padding: '10px 0px 10px 0px' }} component='h4'>{artist.name}</Text>
 						</Card>
 					))
 				}

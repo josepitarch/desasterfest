@@ -8,13 +8,14 @@ export default function NewConfirmation() {
         <Card style={{ padding: '10px', margin: '20px' }} radius="md">
           <Card.Section component='div'>
             <Image
-              src="/line-up/sample_line_up.jpg"
-              height={300}
-              alt="Norway"
+              src="/line-up/monica.jpg"
+              height={400}
+              alt="Monica X"
+              
             />
           </Card.Section>
-          <Text weight={500} component='h4'>Artista confirmado</Text>
-          <Text size="sm" color="dimmed" component='h5'>Artista confirmado</Text>
+          <Text weight={500} component='h4'>Monica X</Text>
+          <Text size="sm" color="dimmed" component='h5'>3º artista confirmado</Text>
         </Card>
       </div>
     </section>
