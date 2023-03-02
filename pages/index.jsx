@@ -23,12 +23,11 @@ export default function Home({ images }) {
         <title>Desaster Fest</title>
         <meta name="description" content="Página oficial de Desaster Fest" />
         <link rel="icon" href="/logo.png" />
-        <Background />
-
       </Head>
 
       <Script src="/background.js" />
       <Script src="/navigation.js" />
+      <Background />
 
 
       <div className='pt-4 xl:pt-24 flex flex-col xl:flex-row m-auto xl:gap-x-24 xl:w-[1300px]'>

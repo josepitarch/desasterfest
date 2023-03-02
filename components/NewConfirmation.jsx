@@ -1,22 +1,18 @@
-import { Card, Text, Image } from '@mantine/core';
 
 export default function NewConfirmation() {
   return (
-    <section id='new-confirmation' className='mt-20 flex flex-col items-center'>
-      <h2>Nueva confirmación</h2>
-      <div className='w-full md:w-96'>
-        <Card style={{ padding: '10px', margin: '20px' }} radius="md">
-          <Card.Section component='div'>
-            <Image
-              src="/line-up/monica.jpg"
-              height={400}
-              alt="Monica X"
-              
-            />
-          </Card.Section>
-          <Text weight={500} component='h4'>Monica X</Text>
-          <Text size="sm" color="dimmed" component='h5'>3º artista confirmado</Text>
-        </Card>
+    <section id='new-confirmation' className='mt-20 flex flex-col items-center p-4'>
+      <h2 className='text-3xl'>Nueva confirmación</h2>
+      <div className='bg-white overflow-hidden rounded-lg mt-2'>
+        <img
+          src='/line-up/monica.jpg'
+          height='600'
+          width='400'
+        />
+        <div className='p-3'>
+          <h4 className='font-bold'>Monica X</h4>
+          <p className='italic text-gray-500'>3º artista confirmado</p>
+        </div>
       </div>
     </section>
   )

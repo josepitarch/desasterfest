@@ -5,7 +5,7 @@ import { Carousel } from '@mantine/carousel'
 export default function Gallery({ images }) {
   return (
 
-    <Carousel className='carousel'  withIndicators style={{width: '100%'}}>
+    <Carousel className='carousel'  withIndicators withControls style={{width: '100%'}}>
       {
         images.map((image, index) => {
           return <Carousel.Slide key={index}>

@@ -1,36 +1,25 @@
-import { Card, Text, Image } from '@mantine/core';
+import Image from "next/image"
 
 const artists = [
 	{
 		id: 1,
 		name: 'Monica X',
 		description: 'DJ de la discoteca de la ruta Chocolate',
-		image: 'line-up/monica.jpg'
+		image: '/line-up/monica.jpg'
 	},
 	{
 		id: 2,
 		name: 'Batiste',
 		description: 'DJ del pueblo',
-		image: 'line-up/batiste.jpg'
+		image: '/line-up/batiste.jpg'
 	},
 	{
 		id: 3,
 		name: 'Paco Caña',
 		description: 'DJ de la discoteca Masia',
-		image: 'line-up/pacocana.jpg'
+		image: '/line-up/pacocana.jpg'
 	},
 ]
-
-const fakeArtist = {
-	id: 6,
-	name: 'DJ',
-	description: 'DJ de la discoteca de la ruta Chocolate',
-	image: 'line-up/jose-conca.jpg'
-}
-
-const fakeArtists = Array(4)
-	.fill(fakeArtist)
-	.map((artist, index) => ({ ...artist, id: index + 1 }))
 
 export default function LineUp() {
 	return (
@@ -39,16 +28,14 @@ export default function LineUp() {
 			<ul id='container-line-up'>
 				{
 					artists.map(artist => (
-						<Card key={artist.id} component='li' p="lg" radius="md">
-							<Card.Section component='div'>
-								<Image
+						<li key={artist.id} className='bg-white rounded-lg overflow-hidden'>
+								<img
 									src={artist.image}
-									height={300}
-									alt="Norway"
-								/>
-							</Card.Section>
-							<Text weight={500} style={{ padding: '10px 0px 10px 0px' }} component='h4'>{artist.name}</Text>
-						</Card>
+									className='img-line-up'
+									alt={artist.name}
+									/>
+								<h3 className='font-bold m-3'>{artist.name}</h3>
+						</li>
 					))
 				}
 			</ul>
