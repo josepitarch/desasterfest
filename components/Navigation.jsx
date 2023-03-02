@@ -36,7 +36,7 @@ const SOCIAL_NETWORKS_LINKS = [
 	{
 		title: 'facebook',
 		icon: Icons.facebook,
-		href: 'https://twitter.com/midudev'
+		href: 'https://www.facebook.com/Desasterfest/'
 	}
 ]
 
