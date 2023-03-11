@@ -19,6 +19,18 @@ const artists = [
 		description: 'DJ de la discoteca Masia',
 		image: '/line-up/pacocana.jpg'
 	},
+	{
+		id: 4,
+		name: 'Serrano',
+		description: 'DJ de la discoteca Masia',
+		image: '/line-up/serrano.jpg'
+	},
+	{
+		id: 5,
+		name: 'Ismael Lora',
+		description: 'DJ de la discoteca Masia',
+		image: '/line-up/lora.jpg'
+	},
 ]
 
 export default function LineUp() {
