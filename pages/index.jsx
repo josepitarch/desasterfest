@@ -55,7 +55,7 @@ export default function Home({ images }) {
             {/* <Link href='/buy_ticket' className='text-3xl font-medium text-center text-primary w-80 lg:w-96 mt-20 p-4 bg-gradient-to-r from-violet-400 to-violet-800 rounded-md'>
               Comprar entradas
             </Link> */}
-            <p className='text-3xl text-primary mt-20'>¡Entradas próximamente a la venta!</p>
+            <p className='text-3xl text-primary mt-20  text-center'>¡Entradas próximamente a la venta!</p>
           </header>
 
           <NewConfirmation />
@@ -71,6 +71,16 @@ export default function Home({ images }) {
               los mejores artistas que hagan que este evento sea inolvidable.
             </p>
             <Gallery images={images} />
+            <div className='mt-10 h-[400px] xl:h-[600px]'>
+              <iframe
+                width={'100%'}
+                height={'100%'}
+                src="https://www.youtube.com/embed/b-KI7cRrmX8"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
           </section>
           <section id='localization' className='max-w-full p-4 mb-20'>
             <h2 className='mb-6'>Cómo llegar</h2>
