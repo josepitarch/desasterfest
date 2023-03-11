@@ -42,19 +42,20 @@ export default function Home({ images }) {
               <span className='text-2xl max-w-[38rem] m-auto block'>II Edición</span>
             </h1>
 
-            <div className='text-center mt-6 italic -rotate-[10deg]'>
+            <div className='text-center mt-6 italic'>
               <h3 className='animate-fadeIn animate-delay-300 text-white/80 text-2xl mt-3'>
                 Recinto ferial Almenara
               </h3>
             </div>
-            <div className='mt-8 animate-fadeIn animate-delay-500 -rotate-[10deg] flex flex-col items-center'>
+            <div className='mt-8 animate-fadeIn animate-delay-500 flex flex-col items-center'>
               <h2 className='mb-4 animate-fadeIn animate-delay-200 font-extrabold text-[40px] lg:text-6xl text-white'>9 de septiembre</h2>
               <DynamicComponent />
             </div>
 
-            <Link href='/buy_ticket' className='text-3xl font-medium text-center text-primary w-80 lg:w-96 mt-20 p-4 bg-gradient-to-r from-violet-400 to-violet-800 rounded-md'>
+            {/* <Link href='/buy_ticket' className='text-3xl font-medium text-center text-primary w-80 lg:w-96 mt-20 p-4 bg-gradient-to-r from-violet-400 to-violet-800 rounded-md'>
               Comprar entradas
-            </Link>
+            </Link> */}
+            <p className='text-3xl text-primary mt-20'>¡Entradas próximamente a la venta!</p>
           </header>
 
           <NewConfirmation />
