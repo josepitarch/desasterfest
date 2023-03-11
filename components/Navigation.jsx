@@ -37,13 +37,18 @@ const SOCIAL_NETWORKS_LINKS = [
 		title: 'facebook',
 		icon: Icons.facebook,
 		href: 'https://www.facebook.com/Desasterfest/'
+	},
+	{
+		title: 'whatsapp',
+		icon: Icons.whatsapp,
+		href: 'https://api.whatsapp.com/send?phone=670235022&text=Hola Ivan,%0a%0ame gustaría saber más sobre el festival Desaster Fest'
 	}
 ]
 
 export default function Navigation() {
 	return (
 		<aside className='flex flex-col-reverse content-center xl:sticky xl:top-24 xl:flex-col p-2'>
-			<Link href='/#top' className='mt-[-50px] xl:mt-0'>
+			<Link href='/#top' className='mt-[-50px]'>
 				<Image src={Logo} id='logo' className='animate-zoomIn' alt='Logo Desaster Fest' />
 			</Link>
 			<input type='checkbox' hidden id='menu' className='peer' />
@@ -57,7 +62,7 @@ export default function Navigation() {
 				<MenuIcon />
 			</label>
 
-			<nav id='navbar' className='last absolute top-0 left-0 right-0 z-40 hidden min-h-screen py-24 px-8 bg-black/30 peer-checked:block backdrop-blur-lg text-center xl:px-0 xl:flex xl:flex-col xl:min-h-min xl:backdrop-blur-0 xl:mt-24 transition-all'>
+			<nav id='navbar' className='last absolute top-0 left-0 right-0 z-40 hidden min-h-screen py-3 px-8 bg-black/30 peer-checked:block backdrop-blur-lg text-center xl:px-0 xl:flex xl:flex-col xl:min-h-min xl:backdrop-blur-0 xl:mt-24 transition-all'>
 				<ul className='flex flex-col gap-y-8 mb-20 text-primary text-4xl'>
 					{
 						NAVIGATION_LINKS.map(({ title, href }) => {
