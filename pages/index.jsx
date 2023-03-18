@@ -72,6 +72,10 @@ export default function Home({ images }) {
             </p>
             <Gallery images={images} />
             <div className='mt-10 h-[400px] xl:h-[600px]'>
+              <p className='mb-1 font-bold text-lg lg:text-3xl text-primary text-center'>
+                <span className='block'>¡No olvides de ver el After Movie</span>
+                <span className='block'>de la primera edición!</span>
+              </p>
               <iframe
                 width={'100%'}
                 height={'100%'}
@@ -85,7 +89,7 @@ export default function Home({ images }) {
           <section id='localization' className='max-w-full p-4 mb-20'>
             <h2 className='mb-6'>Cómo llegar</h2>
             <div className='flex flex-col md:flex-row h-96'>
-              <h3 className='md:pr-4 text-white self-center'>
+              <h3 className='md:pr-4 text-white lg:text-lg text-center self-center'>
                 El evento se celebra en el recinto ferial de la localidad
                 de Almenara, en la provincia de Castellón.
               </h3>
