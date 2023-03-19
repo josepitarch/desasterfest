@@ -51,10 +51,6 @@ export default function Home({ images }) {
               <h2 className='mb-4 animate-fadeIn animate-delay-200 font-extrabold text-[40px] lg:text-6xl text-white'>9 de septiembre</h2>
               <DynamicComponent />
             </div>
-
-            {/* <Link href='/buy_ticket' className='text-3xl font-medium text-center text-primary w-80 lg:w-96 mt-20 p-4 bg-gradient-to-r from-violet-400 to-violet-800 rounded-md'>
-              Comprar entradas
-            </Link> */}
             <p className='text-3xl text-primary mt-20  text-center'>¡Entradas próximamente a la venta!</p>
           </header>
 

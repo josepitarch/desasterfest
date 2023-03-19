@@ -48,8 +48,8 @@ const SOCIAL_NETWORKS_LINKS = [
 export default function Navigation() {
 	return (
 		<aside className='flex flex-col-reverse content-center xl:sticky xl:top-24 xl:flex-col p-2'>
-			<Link href='/#top' className='mt-[-50px]'>
-				<Image src={Logo} id='logo' className='animate-zoomIn mx-auto lg:w-96' alt='Logo Desaster Fest' />
+			<Link href='/#top' className='lg:mt-[-50px]'>
+				<Image src={Logo} id='logo' className='animate-zoomIn mx-auto relative top-0' alt='Logo Desaster Fest' />
 			</Link>
 			<input type='checkbox' hidden id='menu' className='peer' />
 			<div className='flex flex-row-reverse'>
@@ -65,7 +65,7 @@ export default function Navigation() {
 				<div className='flex flex-row items-center visible xl:invisible flex-1'>
 					{
 						SOCIAL_NETWORKS_LINKS.map(({ icon: Icon, href, title }) => {
-							return <a key={title} className='text-white hover:scale-125 transition-all hover:text-primary' href={href} target='_blank' rel='noopener noreferrer'>
+							return <a key={title} className='text-white transition-all hover:text-primary' href={href} target='_blank' rel='noopener noreferrer'>
 								<span aria-label={title}>
 									<Icon />
 								</span>
