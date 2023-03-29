@@ -46,6 +46,31 @@ const artists = [
 		name: 'Peku',
 		image: '/line-up/peku.jpg'
 	},
+	{
+		id: 10,
+		name: 'Javi Boss',
+		image: '/line-up/javi-boss.jpg'
+	},
+	{
+		id: 11,
+		name: 'Jose Conca',
+		image: '/line-up/jose-conca.jpg'
+	},
+	{
+		id: 12,
+		name: 'Miguel Serna',
+		image: '/line-up/miguel-serna.jpg'
+	},
+	{
+		id: 13,
+		name: 'Raúl Ortiz',
+		image: '/line-up/raul-ortiz.jpg'
+	},
+	{
+		id: 14,
+		name: 'Toñin',
+		image: '/line-up/tonin.jpg'
+	},
 ]
 
 export default function LineUp() {
