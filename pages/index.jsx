@@ -69,7 +69,7 @@ export default function Home({ images }) {
             <Gallery images={images} />
             <div className='mt-10 h-[400px] xl:h-[600px]'>
               <p className='mb-1 font-bold text-lg lg:text-3xl text-primary text-center'>
-                <span className='block'>¡No olvides de ver el After Movie</span>
+                <span className='block'>¡No olvides ver el After Movie</span>
                 <span className='block'>de la primera edición!</span>
               </p>
               <iframe
