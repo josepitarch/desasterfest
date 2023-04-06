@@ -1,21 +1,22 @@
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Aspanion from '../components/Aspanion'
 import Gallery from '../components/Gallery'
-import dynamic from 'next/dynamic'
 
+import Script from 'next/script'
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import Background from '../components/Background'
-import Script from 'next/script'
-import Navigation from '../components/Navigation'
 import LineUp from '../components/LineUp'
-import Link from 'next/link'
+import Navigation from '../components/Navigation'
 import NewConfirmation from '../components/NewConfirmation'
 
 export default function Home({ images }) {
   const DynamicComponent = dynamic(() =>
     import('../components/Countdown'), { ssr: false }
   )
+
+  const URL_MEGAENTRADAS = 'https://megaentradas.com/evento/desasterfest-almenara'
 
   return (
     <>
@@ -51,7 +52,13 @@ export default function Home({ images }) {
               <h2 className='mb-4 animate-fadeIn animate-delay-200 font-extrabold text-[40px] lg:text-6xl text-white'>9 de septiembre</h2>
               <DynamicComponent />
             </div>
-            <p className='text-3xl text-primary mt-20  text-center'>¡Entradas próximamente a la venta!</p>
+            <a
+              href={URL_MEGAENTRADAS}
+              target="_blank"
+              className='bg-primary p-4 mt-10 w-72 lg:w-96 rounded-xl text-white text-center text-2xl font-bold'
+            >
+              Comprar entradas
+            </a>
           </header>
 
           <NewConfirmation />
