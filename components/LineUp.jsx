@@ -1,35 +1,34 @@
-import Image from "next/image"
 
 const artists = [
 	{
 		id: 1,
-		name: 'Monica X',
-		image: '/line-up/monica.jpg'
+		name: 'Raúl Ortiz',
+		image: '/line-up/raul-ortiz.jpg'
 	},
 	{
 		id: 2,
-		name: 'Batiste',
-		image: '/line-up/batiste.jpg'
+		name: 'Toñin by Jumper brothers',
+		image: '/line-up/tonin.jpg'
 	},
 	{
 		id: 3,
-		name: 'Paco Caña',
-		image: '/line-up/pacocana.jpg'
+		name: 'Javi Boss',
+		image: '/line-up/javi-boss.jpg'
 	},
 	{
 		id: 4,
-		name: 'Serrano',
-		image: '/line-up/serrano.jpg'
+		name: 'Miguel Serna',
+		image: '/line-up/miguel-serna.jpg'
 	},
 	{
 		id: 5,
-		name: 'Ismael Lora',
-		image: '/line-up/lora.jpg'
+		name: 'Jose Conca',
+		image: '/line-up/jose-conca.jpg'
 	},
 	{
 		id: 6,
-		name: 'Abel K Kaña',
-		image: '/line-up/abelkkana.jpg'
+		name: 'Monica X',
+		image: '/line-up/monica.jpg'
 	},
 	{
 		id: 7,
@@ -38,39 +37,39 @@ const artists = [
 	},
 	{
 		id: 8,
+		name: 'Ismael Lora',
+		image: '/line-up/lora.jpg'
+	},
+	{
+		id: 9,
+		name: 'Batiste',
+		image: '/line-up/batiste.jpg'
+	},
+	{
+		id: 10,
+		name: 'Abel K Kaña',
+		image: '/line-up/abelkkana.jpg'
+	},
+	{
+		id: 11,
+		name: 'Serrano',
+		image: '/line-up/serrano.jpg'
+	},
+	{
+		id: 12,
 		name: 'Juanka',
 		image: '/line-up/juanka.jpg'
 	},
 	{
-		id: 9,
-		name: 'Peku',
-		image: '/line-up/peku.jpg'
-	},
-	{
-		id: 10,
-		name: 'Javi Boss',
-		image: '/line-up/javi-boss.jpg'
-	},
-	{
-		id: 11,
-		name: 'Jose Conca',
-		image: '/line-up/jose-conca.jpg'
-	},
-	{
-		id: 12,
-		name: 'Miguel Serna',
-		image: '/line-up/miguel-serna.jpg'
-	},
-	{
 		id: 13,
-		name: 'Raúl Ortiz',
-		image: '/line-up/raul-ortiz.jpg'
+		name: 'Paco Caña',
+		image: '/line-up/pacocana.jpg'
 	},
 	{
 		id: 14,
-		name: 'Toñin',
-		image: '/line-up/tonin.jpg'
-	},
+		name: 'Peku',
+		image: '/line-up/peku.jpg'
+	}
 ]
 
 export default function LineUp() {

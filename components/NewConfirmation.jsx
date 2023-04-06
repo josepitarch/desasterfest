@@ -10,7 +10,7 @@ export default function NewConfirmation() {
           width='400'
         />
         <div className='p-3'>
-          <h4 className='font-bold'>Toñin de Jumper Brothers</h4>
+          <h4 className='font-bold'>Toñin by Jumper Brothers</h4>
           <p className='italic text-gray-500'>14º artista confirmado</p>
         </div>
       </div>
