@@ -6,8 +6,8 @@ export default function NewConfirmation() {
       <div className='bg-white overflow-hidden rounded-lg mt-2'>
         <img
           src='/line-up/raul-ortiz.jpg'
-          height='600'
-          width='400'
+          height='500'
+          width='350'
         />
         <div className='p-3'>
           <h4 className='font-bold'>Raúl Ortiz</h4>

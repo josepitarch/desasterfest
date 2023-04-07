@@ -52,7 +52,7 @@ section p {
 #container-line-up {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, minmax(150px, 300px));
   gap: 1rem;
 }
 
@@ -63,9 +63,9 @@ section p {
 #new-confirmation img {
  height: 400px; 
 }
-.img-line-up {
-  width: 100% !important;
-  height: 200px !important;
+
+#line-up img {
+  height: 200px;
   object-fit: cover;
 }
 
@@ -85,19 +85,13 @@ section p {
     }
 }
 
-
-
-.mantine-Carousel-slide {
-  height: 300px;
-}
-
 @media (min-width: 768px) {
-  .mantine-Carousel-slide {
-    height: 600px;
+  #line-up img {
+    height: 300px;
+    object-fit: cover;
   }
 
-  .img-line-up {
-  height: 370px !important;
- 
-}
+  #container-line-up {
+    grid-template-columns: repeat(4, minmax(150px, 300px));
+  }
 } 

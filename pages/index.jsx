@@ -91,8 +91,8 @@ export default function Home({ images }) {
           </section>
           <section id='localization' className='max-w-full p-4 mb-20'>
             <h2 className='mb-6'>Cómo llegar</h2>
-            <div className='flex flex-col md:flex-row h-96'>
-              <h3 className='md:pr-4 text-white lg:text-lg text-center self-center'>
+            <div className='flex flex-col xl:flex-row gap-4 xl:gap-0 h-96'>
+              <h3 className='md:pr-4 text-white text-xl text-center self-center'>
                 El evento se celebra en el recinto ferial de la localidad
                 de Almenara, en la provincia de Castellón.
               </h3>

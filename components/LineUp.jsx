@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 const artists = [
 	{
@@ -80,9 +81,10 @@ export default function LineUp() {
 				{
 					artists.map(artist => (
 						<li key={artist.id} className='bg-white rounded-lg overflow-hidden'>
-							<img
+							<Image
 								src={artist.image}
-								className='img-line-up'
+								width={300}
+								height={700}
 								alt={artist.name}
 							/>
 							<h3 className='font-bold m-3'>{artist.name}</h3>
