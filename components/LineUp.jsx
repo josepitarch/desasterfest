@@ -7,11 +7,6 @@ const artists = [
 		image: '/line-up/raul-ortiz.jpg'
 	},
 	{
-		id: 2,
-		name: 'Toñin by Jumper brothers',
-		image: '/line-up/tonin.jpg'
-	},
-	{
 		id: 3,
 		name: 'Javi Boss',
 		image: '/line-up/javi-boss.jpg'

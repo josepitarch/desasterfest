@@ -11,7 +11,7 @@ export default function NewConfirmation() {
         />
         <div className='p-3'>
           <h4 className='font-bold'>Raúl Ortiz</h4>
-          <p className='italic text-gray-500'>14º artista confirmado</p>
+          <p className='italic text-gray-500'>13º artista confirmado</p>
         </div>
       </div>
     </section>
