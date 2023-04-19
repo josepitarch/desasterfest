@@ -80,10 +80,11 @@ export default function Home({ images }) {
                 <span className='block'>de la primera edición!</span>
               </p>
               <iframe
-                width={'100%'}
-                height={'100%'}
+                width={'80%'}
+                height={'80%'}
                 src="https://www.youtube.com/embed/b-KI7cRrmX8"
-                title="YouTube video player"
+                className='m-auto'
+                title="Video primera edición Desaster Fest"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
