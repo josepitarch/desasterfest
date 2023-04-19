@@ -8,7 +8,7 @@ const artists = [
 	},
 	{
 		id: 2,
-		name: 'Toñin by Jumper brothers',
+		name: 'Toñin',
 		image: '/line-up/tonin.jpg'
 	},
 	{
