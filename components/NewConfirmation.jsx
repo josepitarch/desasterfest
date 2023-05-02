@@ -2,18 +2,15 @@
 export default function NewConfirmation() {
   return (
     <section id='new-confirmation' className='mt-20 flex flex-col items-center p-4'>
-      <h2 className='text-3xl'>Nueva confirmación</h2>
-      <div className='bg-white overflow-hidden rounded-lg mt-2'>
-        <img
-          src='/line-up/raul-ortiz.jpg'
-          height='500'
-          width='350'
-        />
-        <div className='p-3'>
-          <h4 className='font-bold'>Raúl Ortiz</h4>
-          <p className='italic text-gray-500'>14º artista confirmado</p>
-        </div>
-      </div>
+      <h2 className='text-3xl text-center mb-2'>¡Ya disponible el video presentación!</h2>
+      <iframe width={'80%'}
+        className='h-[400px] lg:h-[500px]'
+        src="https://www.youtube.com/embed/WomH3uMIbPU"
+        title="Video presentación Desaster Fest"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
     </section>
   )
 }
