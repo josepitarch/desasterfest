@@ -7,9 +7,8 @@ export default function NewConfirmation() {
         className='h-[400px] lg:h-[500px]'
         src="https://www.youtube.com/embed/WomH3uMIbPU"
         title="Video presentación Desaster Fest"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
+        allowFullScreen>
       </iframe>
     </section>
   )

@@ -1,6 +1,12 @@
 import Image from "next/image"
+import { Icons } from "./Icons"
 
 const artists = [
+	{
+		id: 0,
+		name: 'New Limit',
+		image: '/line-up/new-limit.jpg'
+	},
 	{
 		id: 1,
 		name: 'Raúl Ortiz',
@@ -80,14 +86,22 @@ export default function LineUp() {
 			<ul id='container-line-up'>
 				{
 					artists.map(artist => (
-						<li key={artist.id} className='bg-white rounded-lg overflow-hidden'>
+						<li key={artist.id} className='bg-white rounded-lg relative'>
 							<Image
 								src={artist.image}
 								width={300}
 								height={700}
+								className='rounded-lg'
 								alt={artist.name}
 							/>
 							<h3 className='font-bold m-3'>{artist.name}</h3>
+							{
+								artist.id === 0 && (
+									<span className='absolute -top-6 -left-4 z-10'>
+										{Icons.star()}
+									</span>
+								)
+							}
 						</li>
 					))
 				}

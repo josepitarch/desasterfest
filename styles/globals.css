@@ -73,6 +73,20 @@ section p {
   color: yellow;
 }
 
+svg.star {
+  animation: rotar 6s infinite linear;
+  transform-style: preserve-3d;
+}
+
+@keyframes rotar {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 @keyframes click {
     0% {
         transform: scale(.95);
