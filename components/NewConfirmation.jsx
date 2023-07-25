@@ -1,5 +1,5 @@
 
-const URL_MEGAENTRADAS = 'https://megaentradas.com/evento/desasterfest-almenara'
+const URL_MEGAENTRADAS = 'https://megaentradas.com/evento/desaster-cicling-fest'
 
 export default function NewConfirmation() {
   return (
