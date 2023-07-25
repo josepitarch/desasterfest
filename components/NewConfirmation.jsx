@@ -14,7 +14,7 @@ export default function NewConfirmation() {
       </iframe> */}
       <p>
         Ahora por la mañana master class de ciclo indoor. Tres horas disfrutando de la música de Monica X con nuestras reputadas
-        monitoras <strong>Vera Almero</strong>, <strong>Tania Melendo</strong> y <strong>Noelia Fenolloda</strong>. Habrán
+        monitoras <strong>Vero Almero</strong>, <strong>Tania Melendo</strong> y <strong>Noelia Fenollosa</strong>. Habrán
         descansos de 15 minutos entre cada sesión donde ofreceremos refrescos. ¡Apúntate ya! Y no olvides adquirir tu entrada
         para el evento de la tarde.
       </p>
