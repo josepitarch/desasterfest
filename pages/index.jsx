@@ -62,7 +62,7 @@ export default function Home({ images }) {
            
           </header>
 
-          <NewConfirmation />
+          {/* <NewConfirmation /> */}
 
           <LineUp />
 

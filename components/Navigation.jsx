@@ -22,6 +22,10 @@ const NAVIGATION_LINKS = [
 		href: '#first-edition',
 	},
 	{
+		title: 'Blog',
+		href: '/news',
+	},
+	{
 		title: 'Cómo llegar',
 		href: '#localization',
 	}

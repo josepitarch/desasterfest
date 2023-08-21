@@ -76,6 +76,11 @@ const artists = [
 		id: 14,
 		name: 'Peku',
 		image: '/line-up/peku.jpg'
+	},
+	{
+		id: 15,
+		name: 'Raúl Platero',
+		image: '/line-up/raul-platero.jpg'
 	}
 ]
 
