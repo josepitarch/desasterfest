@@ -52,14 +52,16 @@ export default function Home({ images }) {
               <h2 className='mb-4 animate-fadeIn animate-delay-200 font-extrabold text-[40px] lg:text-6xl text-white'>9 de septiembre</h2>
               <DynamicComponent />
             </div>
-            <a
-              href={URL_MEGAENTRADAS}
-              target="_blank"
-              className='bg-primary p-4 mt-10 w-72 lg:w-96 rounded-xl text-white text-center text-2xl font-bold'
-            >
-              Comprar entradas
-            </a>
            
+            <div className='text-white mt-5 text-lg max-w-[60ch] flex flex-col gap-4'>
+              <p>Puedes adquirir tu entrada anticipada por 10€ sin límite de aforo en los siguientes puntos de venta en Almenara:
+                <span className='text-yellow-300 italic'> Papeleria Simeón</span>, 
+                <span className='text-yellow-300 italic'> Bar Els Cristals</span> y 
+                <span className='text-yellow-300 italic'> Bar El Tubo</span>.</p>
+              <p>O también puedes en taquilla el día del evento por el mismo precio. <span className='italic'>Recomendamos coger entrada anticipada para evitar hacer cola.</span></p>
+              
+            </div>
+
           </header>
 
           {/* <NewConfirmation /> */}
